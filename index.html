@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mediamain.css">
+    <title>AluraGeek</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+
+        <div class="cabecalho__logo_um">
+            <img src="assets/img/image 1.svg" alt="logo coração">
+        </div>
+
+        <div class="cabecalho__logo_dois">
+            <img src="assets/img/AluraGeek.png" alt=" logo AluraGeek">
+        </div>
+
+    </header>
+
+    <main class="container">
+
+        <section class="produtos">
+
+            <p class="produtos__titulo">MEUS PRODUTOS:</p>
+
+            <div class="produtos__itens">
+
+                <div>
+
+                    <ul class="produtos__itens_lista">
+                        
+                        <li>
+                            <p class="produtos__itens_preco">$ 60,00 <button onclick="delet(event)" class="delete"><img src="assets/icon/lixeira.png" alt="icone lixeira"></button></p>
+                            <img class="produtos__itens_img" src="assets/img/stormtrooper.png" alt="imagem produto">
+                            <p class="produtos__itens_nome">Stormtrooper</p>
+                        </li>        
+
+                        <li>
+                            <p class="produtos__itens_preco">$ 60,00 <button onclick="delet(event)" class="delete"><img src="assets/icon/lixeira.png" alt="icone lixeira"></button></p>
+                            <img class="produtos__itens_img" src="assets/img/image 2.png" alt="imagem produto">
+                            <p class="produtos__itens_nome">Game Boy Classic</p>
+                        </li>       
+
+                        <li>
+                            <p class="produtos__itens_preco">$ 100,00 <button onclick="delet(event)" class="delete"><img src="assets/icon/lixeira.png" alt="icone lixeira"></button></p>
+                            <img class="produtos__itens_img" src="https://images.tcdn.com.br/img/img_prod/460977/boneco_yoshi_super_mario_bros_world_24cm_mkp_33551_1_64343de3eac9224de08cb188d20784d6.jpg" alt="imagem produto">
+                            <p class="produtos__itens_nome">Yoshi</p>
+                        </li>       
+
+                        <li>
+                            <p class="produtos__itens_preco">$ 100,00 <button onclick="delet(event)" class="delete"><img src="assets/icon/lixeira.png" alt="icone lixeira"></button></p>
+                            <img class="produtos__itens_img" src="assets/img/mario.webp" alt="imagem produto">
+                            <p class="produtos__itens_nome">Mario</p>
+                        </li>  
+
+                        <li>
+                            <p class="produtos__itens_preco">$ 100,00 <button onclick="delet(event)" class="delete"><img src="assets/icon/lixeira.png" alt="icone lixeira"></button></p>
+                            <img class="produtos__itens_img" src="assets/img/luigi.webp" alt="imagem produto">
+                            <p class="produtos__itens_nome">Luigi</p>
+                        </li>  
+
+                        <li>
+                            <p class="produtos__itens_preco">$ 300,00 <button onclick="delet(event)" class="delete"><img src="assets/icon/lixeira.png" alt="icone lixeira"></button></p>
+                            <img class="produtos__itens_img" src="assets/img/ps2.jpg" alt="imagem produto">
+                            <p class="produtos__itens_nome">Playstation 2</p>
+                        </li> 
+                        
+                        <li>
+                            <p class="produtos__itens_preco">$ 250,00 <button onclick="delet(event)" class="delete"><img src="assets/icon/lixeira.png" alt="icone lixeira"></button></p>
+                            <img class="produtos__itens_img" src="assets/img/controlexbox.png" alt="imagem produto">
+                            <p class="produtos__itens_nome">Controle Xbox</p>
+                        </li> 
+                        
+
+                    </ul>                    
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="adicionar__produtos">
+
+            <p class="adicionar__produtos_titulo">ADICIONAR PRODUTO:</p>
+
+            <div class="adicionar__produtos_inputs">
+
+                <input type="text" name="nome" id="nome" placeholder="nome..." autocomplete="off">
+
+                <input type="number" name="valor" id="valor" placeholder="valor..." autocomplete="off">
+
+                <input type="text" name="imagem" id="imagem" placeholder="imagem..." autocomplete="off">
+
+                <div class="adicionar__produtos_btn">
+
+                    <button class="adicionar__produtos_guardar" onclick="produtosAdicionar()">Guardar</button>
+
+                    <button class="adicionar__produtos_limpar" onclick="limparCampo()">Limpar</button>
+                </div>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+
+        <div class="rodape__logo">
+
+            <div class="rodape__logo_um">
+                <img src="assets/img/image 1.svg" alt="logo coração">
+            </div>
+
+            <div class="rodape__logo_dois">
+                <img src="assets/img/AluraGeek.png" alt="logo AluraGeek">
+            </div>
+
+        </div>
+
+        <div class="rodape__texto">
+            <p>DESENVOLVIDO POR MIQUEAS LUCAS</p>
+            <span>ALURA LATAM — 2024</span>
+        </div>
+
+    </footer>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>
